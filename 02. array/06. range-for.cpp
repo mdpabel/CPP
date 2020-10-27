@@ -5,7 +5,7 @@ using namespace std;
 void arrIterate(int (&arr)[6])
 {
 
-    for (int k : arr)
+    for (auto k : arr)
     {
         cout << k << " ";
     }
