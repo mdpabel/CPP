@@ -1,0 +1,40 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n = 11;
+
+    // even odd check
+    cout << (n & 1) << endl; // 11 % 2 ;
+
+    // Multiplication or Division by 2
+    n = n << 1; // multiply n with n;
+    cout << n << endl;
+
+    n = n >> 1;
+    cout << n << endl;
+
+    //Avoiding use of strlen():
+    char str[] = "Hello world";
+
+    for (int i = 0; i < str[i]; i++)
+    {
+        cout << str[i] << " ";
+    }
+    cout << endl;
+
+    // Calculating the number of digits directly
+    int digits = floor(log10(n)) + 1;
+    cout << digits << endl;
+
+    // use and
+
+    if (n > 10 and n < 200)
+    {
+        cout << "Something" << endl;
+    }
+
+    return 0;
+}

@@ -1,33 +1,12 @@
-#include <iostream>
-#include <string>
-#include <algorithm>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int compare(string a, string b)
-{
-    if (a.length() == b.length())
-    {
-        return a > b;
-    }
-    return a.length() > b.length();
-}
-
 int main()
 {
-    int n;
-    cin >> n;
-    string str[n];
-    cin.get();
-    for (size_t i = 0; i < n; i++)
-    {
-        getline(cin, str[i]);
-    }
+    // “a[a-z]” can have values ‘aa’, ‘ab’,’ ax’ .
+    // Here a has a literal meaning and [a-z] denotes any
+    // lowercase character from a to z.
 
-    sort(str, str + n, compare);
-
-    for (int i = 0; i < n; i++)
-    {
-        cout << str[i] << "-" << i << endl;
-    }
+    return 0;
 }
