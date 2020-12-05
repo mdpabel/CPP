@@ -2,6 +2,7 @@
 
 using namespace std;
 using ll = long long;
+#define endl '\n';
 
 int main()
 {
